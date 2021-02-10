@@ -15,7 +15,32 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1><a href="index.html">WEB</a></h1>
+    <div id="gridup"
+      <h1><a href="index.html">WEB</a></h1>
+      <div id="button">
+      <input class="nd" type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      ">
+      <input class="nd" type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      ">
+      <input class="nd" type="button" value="black" onclick="
+      if(document.querySelector('body').dataset.mode === 'day'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('body').dataset.mode = 'night';
+        this.value = 'day';
+      } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+       document.querySelector('body').dataset.mode = 'day';
+        this.value = 'night';
+      }
+      ">
+      </div>
+    </div>
     <div id="grid">
     <ol>
       <li><a href="1.html">HTML</a></li>
@@ -24,7 +49,7 @@
     </ol>
     <div id="article">
     <h2>JavaScript</h2>
-    <p> 뭐있는줄아냐
+    <p> JavaScript (/ˈdʒɑːvəˌskrɪpt/),[8] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[9] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
     </p>
       </div>
     </div>
